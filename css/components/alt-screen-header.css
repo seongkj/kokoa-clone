@@ -28,9 +28,10 @@
 .alt-header__column:last-child {
   margin-left: auto;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
+  text-align: center;
 }
 
-.alt-header__column:last-child i {
+.alt-header__column:last-child span {
   margin-left: 20px;
 }
