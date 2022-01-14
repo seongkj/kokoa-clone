@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 3000vh;
+  height: 100%;
 }
 
 #chat-screen .status-bar,
@@ -19,11 +19,23 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.3s linear;
 }
 .chat_timestamp {
   background-color: #92a4b2;
@@ -96,19 +108,22 @@
   width: 100%;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
   padding: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
   width: 10%;
+  margin-left: 12px;
 }
 
 .reply .reply__column:last-child {
   width: 90%;
   position: relative;
+  right: 10px;
 }
 
 .reply i {
@@ -116,29 +131,31 @@
 }
 
 .reply input {
-  width: 100%;
+  width: 95%;
   border: var(--main-border);
   border-radius: 20px;
-  padding: 10px;
+  padding: 12px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: -2px;
-  top: 4px;
+  right: 2px;
 }
 
 .reply__column:last-child i {
   right: 40px;
+  top: 13px;
 }
 
 .reply__column button {
   background-color: yellow;
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
   border-radius: 50%;
+  top: 5px;
 }
 
 .reply__column button i {
@@ -148,4 +165,27 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-8%);
+  transform: translateY(-80px);
+  outline: 0;
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
