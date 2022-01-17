@@ -83,6 +83,7 @@
   width: 120px;
   height: 120px;
   border-radius: 0px;
+  background-color: violet;
 }
 
 /* .fa-heart {    //i에 쓰인 클래스, open-post__heart-count의 결과물이 같음  

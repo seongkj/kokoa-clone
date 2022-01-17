@@ -25,6 +25,10 @@
   color: var(--gray);
 }
 
+.user-component__avatar {
+  background-color: royalblue;
+}
+
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
