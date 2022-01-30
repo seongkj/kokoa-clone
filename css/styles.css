@@ -23,7 +23,10 @@
 body {
   color: #2e363e;
   font-family: "Be Vietnam Pro", sans-serif;
-  height: 300vh;
+  /* height: 300vh; */
+  /* background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxODAxMjJfMTIx/MDAxNTE2NTUxNzQ2OTI0.hkB6T-yqMTiRL5iacgqe0e67UY1OqrlZVtaX6kHRyosg.twIYvKyheXiZO93eJjNt8QqftcC7gsxHpLx-Fd360Rkg.PNG.d_hye97/489.png?type=w800);
+  background-size: cover;
+  background-attachment: fixed; */
 }
 
 .main-screen {

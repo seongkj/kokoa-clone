@@ -82,21 +82,8 @@
 .open-post__photo img {
   width: 120px;
   height: 120px;
-  border-radius: 0px;
-  background-color: violet;
+  border-radius: 15px;
 }
-
-/* .fa-heart {    //i에 쓰인 클래스, open-post__heart-count의 결과물이 같음  
-  background-color: rgba(0, 0, 0, 0.8);     //find.html에 <div class="open-post__heart-count">
-  color: white;                 //을 없애고 <i class="fas fa-heart fa-xs"> 에 css를 줘도
-  padding: 5px;                 //결과물이 같다.
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-} */
 
 .open-post__heart-count {
   background-color: rgba(0, 0, 0, 0.5);
